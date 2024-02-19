@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Slab&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #000000c4;
+}
+
+.container {
+  background-color: rgb(42, 58, 72);
+  color: #fff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background-color: #526021;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  text-align: center;
+  gap: 10px;
+  border: 1px solid rgb(113, 159, 45);
+  box-shadow: 2px 2px 5px rgb(169, 239, 8);
+  border-radius: 15px;
+  transition: all 2s ease-in-out;
+}
+.box h1 span:first-child {
+  color: rgb(201, 131, 26);
+}
+.box h1 span:nth-child(2) {
+  color: rgb(46, 13, 113);
+}
+.box h1 span:last-child {
+  color: rgb(0, 255, 8);
+}
+.input-form {
+  margin-block: 10px;
+}
+.input-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+.input-form form input {
+  font-size: 23px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  background-color: rgb(211, 231, 236);
+}
+.input-form form input::placeholder {
+  color: rgb(234, 127, 12);
+}
+.input-form form input:nth-child(2)::placeholder {
+  color: #3d1ed7;
+}
+.input-form form input:nth-child(3)::placeholder {
+  color: #32941c;
+}
+.input-form form input[type="submit"] {
+  background-color: rgb(211, 246, 41);
+  opacity: 0.6;
+  cursor: pointer;
+}
+.input-form form input[type="submit"]:hover {
+  opacity: 1;
+}
+
+.information {
+  display: none;
+  flex-direction: column;
+  background-color: #03151836;
+  margin: auto;
+  gap: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.information p:first-child:first-child,
+.information p:nth-child(2):nth-child(2) {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    display: none;
+}
+
+@media screen and (max-width: 445px) {
+  .box {
+    width: 90%;
+  }
+}

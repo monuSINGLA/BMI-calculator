@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/9e9234eeb9.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    #back-home{
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      color: #ffffff;
+      font-size: 35px;
+    }
+</style>
+<body>
+    <a id="back-home" href="/main-project/main.html"><i class="fa-solid fa-house"></i></a>
+
+    
+        <div class="container">
+           
+            <div class="box">
+
+                <h1>
+                    <span>B</span>ody
+                    <span>M</span>ass
+                    <span>I</span>ndex
+                    Calculator
+                </h1>
+                
+                <div class="input-form">
+                    <form id="submit-form" >
+                        <input type="number" class="age" placeholder="Enter your age" >
+                        <input type="number" class="height" placeholder="Enter your height(cm)" >
+                        <input type="number" class="weight" placeholder="Enter your weight(kg)" >
+                        <input type="submit" value="Calculate"  class="btn">
+                    </form>
+    
+                </div>
+    
+                <div class="information">
+                    <p  class="bmi-value">BMI Value :  <span></span></p>
+                    <p class="bmi-category">Category :<span></span> </p>
+                    <!-- <p class="extra-info"></p> -->
+                </div>
+
+                <div class="error-message"></div>
+
+            </div>
+            
+        </div>
+    
+</body>
+</html>
